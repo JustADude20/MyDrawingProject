@@ -75,8 +75,8 @@ public class Main {
     }
 
     /**
-     * Simulates adding a sketch.
-     * There is no real image handling here, we just capture metadata and a note
+     * Simulates adding a sketch
+     * There is no real image handling here, just capture metadata and a note
      */
     private static void addSketch(User user) {
         Prompt p = data.getTodayPrompt();
@@ -152,7 +152,7 @@ public class Main {
 
     /**
      * Helper to robustly read an int from the console
-     * Re-prompts on invalid input instead of crashing
+     * Necessary to prevent the application from crashing by using Re-prompts
      */
     private static int readInt(String prompt) {
         while (true) {
